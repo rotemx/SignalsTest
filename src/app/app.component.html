@@ -5,3 +5,6 @@
 
 <!--<input [ngModel]="computedPerson().val().name" (ngModelChange)="computedPerson().val.set({name: $event})">-->
 <input [ngModel]="computedPerson().val().name" (ngModelChange)="onNameChange($event)">
+
+<h1>CHILD</h1>
+<app-child  [data]="computedPerson()" (RotemIsWring)="onRotemIsWring()"></app-child>
